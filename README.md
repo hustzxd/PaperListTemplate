@@ -1,2 +1,2 @@
 # EfficientPaper
-pruning, quantization and efficient-inference/training paper list.
+Pruning, Quantization and efficient-inference/training paper list.
