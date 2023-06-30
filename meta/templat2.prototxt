@@ -5,11 +5,10 @@ paper {
   authors: "Name1"
   authors: "Name2"
   institutions: "inst1"
-  institutions: "inst2"
 }
 pub {
-  where: ""
-  year: 0
+  where: "ICLR"
+  year: 2022
 }
 code {
   type: "Pytorch"

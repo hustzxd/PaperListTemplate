@@ -13,5 +13,8 @@ pub {
 }
 code {
   type: "Pytorch"
-  url: ""
+  url: "https://github.com/IST-DASLab/sparsegpt"
+}
+note {
+  url: "notes/SparseGPT.md"
 }
