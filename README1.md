@@ -11,3 +11,5 @@ https://github.com/AojunZhou/Efficient-Deep-Learning
 
 https://github.com/chester256/Model-Compression-Papers
 
+1. Add meta information in ./meta
+2. Run `python scripts/generate_paper_list.py`
