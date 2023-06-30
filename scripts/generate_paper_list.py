@@ -101,7 +101,10 @@ def main():
 
         data_list.append(data)
     df = pd.DataFrame(data_list, columns=columns)
-    markdown = """# EfficientPaper\nPruning, Quantization and efficient-inference/training paper list.\n"""
+    # markdown = """# EfficientPaper\nPruning, Quantization and efficient-inference/training paper list.\n"""
+    with open("README_base.md") as rf:
+        markdown = rf.read()
+    markdown += '\n\n'
     markdown += df.to_markdown()
     with open("README.md", "w") as wf:
         wf.write(markdown)
