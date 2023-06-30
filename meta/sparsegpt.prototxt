@@ -1,7 +1,7 @@
 paper {
   title: "SparseGPT: Massive Language Models Can be Accurately Pruned in one-shot."
   abbr: "SparseGPT"
-  url: "https://arxiv.org/abs/2301.00774"
+  url: "https://arxiv.org/pdf/2301.00774.pdf"
   authors: "Elias Frantar"
   authors: "Dan Alistarh"
   institutions: "IST Austria"
