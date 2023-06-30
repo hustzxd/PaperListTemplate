@@ -27,6 +27,7 @@ def gene_base_template():
 
     pinfo.note.url = pinfo.note.url
 
+    pinfo.keyword.words.extend(["key1", "key2"])
 
     root_dir = os.getenv("CURRENT_DIR")
     with open(os.path.join(root_dir, "proto", "template.prototxt"), "w") as wf:

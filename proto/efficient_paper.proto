@@ -7,6 +7,7 @@ message PaperInfo {
     optional Publication pub = 2;
     optional Code code = 3;
     optional Note note = 4;
+    optional Keyword keyword = 5;
 }
 
 message Paper {
@@ -29,4 +30,8 @@ message Code {
 
 message Note {
     optional string url = 1;
+}
+
+message Keyword {
+    repeated string words = 1;
 }
