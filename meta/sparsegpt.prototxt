@@ -1,0 +1,17 @@
+paper {
+  title: "SparseGPT: Massive Language Models Can be Accurately Pruned in one-shot."
+  abbr: "SparseGPT"
+  url: "https://arxiv.org/abs/2301.00774"
+  authors: "Name1"
+  authors: "Name2"
+  institutions: "inst1"
+  institutions: "inst2"
+}
+pub {
+  where: ""
+  year: 2023
+}
+code {
+  type: "Pytorch"
+  url: ""
+}
