@@ -1,0 +1,37 @@
+syntax = "proto2";
+
+package efficient_paper;
+
+message PaperInfo {
+    optional Paper paper = 1;
+    optional Publication pub = 2;
+    optional Code code = 3;
+    optional Note note = 4;
+    optional Keyword keyword = 5;
+}
+
+message Paper {
+    optional string title = 1 [default="paper title"];
+    optional string abbr = 2 [default="abbr"];
+    optional string url = 3;
+    repeated string authors = 4;
+    repeated string institutions = 5;
+}
+
+message Publication {
+    optional string where = 1;
+    optional int32 year = 2;
+}
+
+message Code {
+    optional string type = 1 [default="Pytorch"];
+    optional string url = 2;
+}
+
+message Note {
+    optional string url = 1;
+}
+
+message Keyword {
+    repeated string words = 1;
+}
