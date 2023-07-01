@@ -39,6 +39,7 @@ def main():
 
     for pinfo, f in pinfos:
         meta = "[m](./meta/{})".format(f)
+        meta_inner = "[m](../../meta/{})".format(f)
 
         title = ""
         if pinfo.paper.abbr:
@@ -62,42 +63,46 @@ def main():
             code = "[{}]({})".format(codetype, pinfo.code.url)
 
         note = ""
+        note_inner = ""
         if pinfo.note.url:
-            note = "[note]({})".format(pinfo.note.url)
+            note = "[note](./notes/{})".format(pinfo.note.url)
+            note_inner = "[note](../../notes/{})".format(pinfo.note.url)
 
         data = [meta, title, pub, code, note]
+        data_inner = [meta_inner, title, pub, code, note_inner]
+        
 
         if pinfo.pub.year:
             if pinfo.pub.year in year_cls:
-                year_cls[pinfo.pub.year].append(data)
+                year_cls[pinfo.pub.year].append(data_inner)
             else:
-                year_cls[pinfo.pub.year] = [data]
+                year_cls[pinfo.pub.year] = [data_inner]
 
         if pinfo.pub.where:
             if pinfo.pub.where in pub_cls:
-                pub_cls[pinfo.pub.where].append(data)
+                pub_cls[pinfo.pub.where].append(data_inner)
             else:
-                pub_cls[pinfo.pub.where] = [data]
+                pub_cls[pinfo.pub.where] = [data_inner]
 
         if pinfo.paper.institutions:
             for inst in pinfo.paper.institutions:
                 if inst in inst_cls:
-                    inst_cls[inst].append(data)
+                    inst_cls[inst].append(data_inner)
                 else:
-                    inst_cls[inst] = [data]
+                    inst_cls[inst] = [data_inner]
         if pinfo.paper.authors:
             for author in pinfo.paper.authors:
                 if author in author_cls:
-                    author_cls[author].append(data)
+                    author_cls[author].append(data_inner)
                 else:
-                    author_cls[author] = [data]
+                    author_cls[author] = [data_inner]
 
         if pinfo.keyword.words:
             for word in pinfo.keyword.words:
                 if word in keyword_cls:
-                    keyword_cls[word].append(data)
+                    keyword_cls[word].append(data_inner)
                 else:
-                    keyword_cls[word] = [data]
+                    keyword_cls[word] = [data_inner]
 
         data_list.append(data)
     df = pd.DataFrame(data_list, columns=columns)
