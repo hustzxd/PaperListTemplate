@@ -19,5 +19,5 @@ note {
   url: "SparseGPT.md"
 }
 keyword {
-  words: "Sparse"
+  words: "sparsity"
 }
