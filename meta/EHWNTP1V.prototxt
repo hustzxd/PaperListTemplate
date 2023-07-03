@@ -1,0 +1,23 @@
+paper {
+  title: "Sparsity May Cry: Let Us Fail (Current) Sparse Neural Networks Together!"
+  abbr: "SMC"
+  url: "https://openreview.net/pdf?id=J6F3lLg4Kdp"
+  authors: "Shiwei Liu"
+  authors: "Zhangyang Wang"
+  institutions: "University of Texas at Austin"
+  institutions: "Eindhoven University of Technology"
+}
+pub {
+  where: "ICLR"
+  year: 2023
+}
+code {
+  type: "SMC-Bench"
+  url: "https://github.com/VITA-Group/SMC-Bench"
+}
+note {
+  url: ""
+}
+keyword {
+  words: "sparse"
+}

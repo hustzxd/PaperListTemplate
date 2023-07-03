@@ -1,0 +1,3 @@
+|    | meta                              | title                                                                                                                        | publication   | code                                                 | note   |
+|---:|:----------------------------------|:-----------------------------------------------------------------------------------------------------------------------------|:--------------|:-----------------------------------------------------|:-------|
+|  0 | [m](../../meta/EHWNTP1V.prototxt) | [ (SMC) Sparsity May Cry: Let Us Fail (Current) Sparse Neural Networks Together!](https://openreview.net/pdf?id=J6F3lLg4Kdp) | ICLR-2023     | [SMC-Bench](https://github.com/VITA-Group/SMC-Bench) |        |

@@ -1,10 +1,13 @@
 import os
 import shutil
+import sys
 
 import google.protobuf as pb
 import google.protobuf.text_format
 import ipdb
 import pandas as pd
+
+sys.path.append("./")
 
 from proto import efficient_paper_pb2 as eppb
 
@@ -70,7 +73,6 @@ def main():
 
         data = [meta, title, pub, code, note]
         data_inner = [meta_inner, title, pub, code, note_inner]
-        
 
         if pinfo.pub.year:
             if pinfo.pub.year in year_cls:
@@ -109,7 +111,7 @@ def main():
     # markdown = """# EfficientPaper\nPruning, Quantization and efficient-inference/training paper list.\n"""
     with open("README_base.md") as rf:
         markdown = rf.read()
-    markdown += '\n\n'
+    markdown += "\n\n"
     markdown += df.to_markdown()
     with open("README.md", "w") as wf:
         wf.write(markdown)
@@ -174,7 +176,6 @@ def main():
         with open("{}/{}.md".format(keyword_path, key), "w") as wf:
             wf.write(df_.to_markdown())
         print("Generate {}/{}.md done".format(keyword_path, key))
-
 
 
 if __name__ == "__main__":
