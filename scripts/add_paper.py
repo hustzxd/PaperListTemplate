@@ -16,6 +16,7 @@ sys.path.append("./")
 from proto import efficient_paper_pb2 as eppb
 
 
+
 def get_hash_code(message):
     hash = hashlib.sha1(message.encode("UTF-8")).hexdigest()
     return hash[:8]
@@ -35,10 +36,12 @@ def main():
         name = args.name
     else:
         name = "".join(random.choices(string.ascii_uppercase + string.digits, k=8))
+
     # root_dir = os.getenv("CURRENT_DIR")
-    with open(os.path.join("meta", "{}.prototxt".format(name)), "w") as wf:
+    root_dir = "./"
+    with open(os.path.join(root_dir, "meta", "{}.prototxt".format(name)), "w") as wf:
         print(pinfo)
-        print("Writing paper information into ./meta/{}.prototxt".format(name))
+        print("Writing paper information into {}/meta/{}.prototxt".format(root_dir, name))
         wf.write(str(pinfo))
 
 
