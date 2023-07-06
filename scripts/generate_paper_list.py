@@ -34,6 +34,7 @@ def main():
     data_list = []
 
     year_cls = {}
+    year_out_cls = {}
     pub_cls = {}
     inst_cls = {}
     author_cls = {}
@@ -80,6 +81,11 @@ def main():
             else:
                 year_cls[pinfo.pub.year] = [data_inner]
 
+        if pinfo.pub.year in year_out_cls:
+            year_out_cls[pinfo.pub.year].append(data)
+        else:
+            year_out_cls[pinfo.pub.year] = [data]
+        
         if pinfo.pub.where:
             pub_ = pinfo.pub.where.replace(" ", "-")
             if pub_ in pub_cls:
@@ -205,8 +211,8 @@ def main():
     # markdown += "</details>\n\n"
 
     markdown += "\n## Paper List\n\n"
-    year_cls = dict(sorted(year_cls.items(), reverse=True))
-    for year, data in year_cls.items():
+    year_out_cls = dict(sorted(year_out_cls.items(), reverse=True))
+    for year, data in year_out_cls.items():
         df_ = pd.DataFrame(data, columns=columns)
         df_ = df_.sort_values(by=["year", "publication", "meta"], ascending=True).reset_index(drop=True)
         markdown += "\n### {}\n\n".format(year)
