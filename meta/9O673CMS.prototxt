@@ -1,0 +1,24 @@
+paper {
+  title: "Holistic Adversarially Robust Pruning"
+  abbr: "abbr"
+  url: "https://openreview.net/forum?id=sAJDi9lD06L"
+  authors: "Name1"
+  authors: "Name2"
+  institutions: "inst1"
+  institutions: "inst2"
+}
+pub {
+  where: "ICLR"
+  year: 2023
+}
+code {
+  type: "Pytorch"
+  url: ""
+}
+note {
+  url: ""
+}
+keyword {
+  words: "key1"
+  words: "key2"
+}

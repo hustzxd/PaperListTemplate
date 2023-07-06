@@ -1,0 +1,24 @@
+paper {
+  title: "Joint Edge-Model Sparse Learning is Provably Efficient for Graph Neural Networks"
+  abbr: "abbr"
+  url: "https://openreview.net/forum?id=4UldFtZ_CVF"
+  authors: "Name1"
+  authors: "Name2"
+  institutions: "inst1"
+  institutions: "inst2"
+}
+pub {
+  where: "ICLR"
+  year: 2023
+}
+code {
+  type: "Pytorch"
+  url: ""
+}
+note {
+  url: ""
+}
+keyword {
+  words: "key1"
+  words: "key2"
+}
