@@ -1,11 +1,14 @@
-# EfficientPaper
-Pruning, Quantization and efficient-inference/training paper list.
+# Paper List Template
+
+This template makes it easy for you to manage papers.
 
 ## Table of Contents
-- [Table of Contents](#table-of-contents)
-- [Getting Started](#getting-started)
-- [Fast Search](#fast-search)
-- [Paper List](#paper-list)
+
+- [Paper List Template](#paper-list-template)
+  - [Table of Contents](#table-of-contents)
+  - [Getting Started](#getting-started)
+  - [Fast Search](#fast-search)
+  - [Paper List](#paper-list)
 
 <details><summary><b>References</b></summary>	
 <p>

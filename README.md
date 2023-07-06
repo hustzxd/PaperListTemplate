@@ -1,11 +1,14 @@
-# EfficientPaper
-Pruning, Quantization and efficient-inference/training paper list.
+# Paper List Template
+
+This template makes it easy for you to manage papers.
 
 ## Table of Contents
-- [Table of Contents](#table-of-contents)
-- [Getting Started](#getting-started)
-- [Fast Search](#fast-search)
-- [Paper List](#paper-list)
+
+- [Paper List Template](#paper-list-template)
+  - [Table of Contents](#table-of-contents)
+  - [Getting Started](#getting-started)
+  - [Fast Search](#fast-search)
+  - [Paper List](#paper-list)
 
 <details><summary><b>References</b></summary>	
 <p>
@@ -59,42 +62,6 @@ keyword {
 
 
 ## Fast Search 
-<details><summary><b>year</b></summary> 
-<p>
-
-1. [2021.md](./fast_search/year/2021.md) 
-1. [2023.md](./fast_search/year/2023.md) 
-</p>
-</details>
-<details><summary><b>inst</b></summary> 
-<p>
-
-1. [Eindhoven-University-of-Technology.md](./fast_search/inst/Eindhoven-University-of-Technology.md) 
-1. [Habana-Labs.md](./fast_search/inst/Habana-Labs.md) 
-1. [Houmo-AI.md](./fast_search/inst/Houmo-AI.md) 
-1. [IST-Austria.md](./fast_search/inst/IST-Austria.md) 
-1. [Intel-Corporation.md](./fast_search/inst/Intel-Corporation.md) 
-1. [Neural-Magic.md](./fast_search/inst/Neural-Magic.md) 
-1. [Tencent-AI-Lab.md](./fast_search/inst/Tencent-AI-Lab.md) 
-1. [University-of-Texas-at-Austin.md](./fast_search/inst/University-of-Texas-at-Austin.md) 
-</p>
-</details>
-<details><summary><b>keyword</b></summary> 
-<p>
-
-1. [quantization.md](./fast_search/keyword/quantization.md) 
-1. [sparse.md](./fast_search/keyword/sparse.md) 
-1. [sparsity.md](./fast_search/keyword/sparsity.md) 
-</p>
-</details>
-<details><summary><b>pub</b></summary> 
-<p>
-
-1. [ICCV-workshop.md](./fast_search/pub/ICCV-workshop.md) 
-1. [ICLR.md](./fast_search/pub/ICLR.md) 
-1. [arXiv.md](./fast_search/pub/arXiv.md) 
-</p>
-</details>
 <details><summary><b>author</b></summary> 
 <p>
 
@@ -108,6 +75,42 @@ keyword {
 1. [Shiwei-Liu.md](./fast_search/author/Shiwei-Liu.md) 
 1. [Zhangyang-Wang.md](./fast_search/author/Zhangyang-Wang.md) 
 1. [Zhihang-Yuan.md](./fast_search/author/Zhihang-Yuan.md) 
+</p>
+</details>
+<details><summary><b>year</b></summary> 
+<p>
+
+1. [2021.md](./fast_search/year/2021.md) 
+1. [2023.md](./fast_search/year/2023.md) 
+</p>
+</details>
+<details><summary><b>pub</b></summary> 
+<p>
+
+1. [ICCV-workshop.md](./fast_search/pub/ICCV-workshop.md) 
+1. [ICLR.md](./fast_search/pub/ICLR.md) 
+1. [arXiv.md](./fast_search/pub/arXiv.md) 
+</p>
+</details>
+<details><summary><b>keyword</b></summary> 
+<p>
+
+1. [quantization.md](./fast_search/keyword/quantization.md) 
+1. [sparse.md](./fast_search/keyword/sparse.md) 
+1. [sparsity.md](./fast_search/keyword/sparsity.md) 
+</p>
+</details>
+<details><summary><b>inst</b></summary> 
+<p>
+
+1. [Eindhoven-University-of-Technology.md](./fast_search/inst/Eindhoven-University-of-Technology.md) 
+1. [Habana-Labs.md](./fast_search/inst/Habana-Labs.md) 
+1. [Houmo-AI.md](./fast_search/inst/Houmo-AI.md) 
+1. [IST-Austria.md](./fast_search/inst/IST-Austria.md) 
+1. [Intel-Corporation.md](./fast_search/inst/Intel-Corporation.md) 
+1. [Neural-Magic.md](./fast_search/inst/Neural-Magic.md) 
+1. [Tencent-AI-Lab.md](./fast_search/inst/Tencent-AI-Lab.md) 
+1. [University-of-Texas-at-Austin.md](./fast_search/inst/University-of-Texas-at-Austin.md) 
 </p>
 </details>
 

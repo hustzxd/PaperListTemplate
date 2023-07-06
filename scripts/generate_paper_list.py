@@ -4,7 +4,6 @@ import sys
 
 import google.protobuf as pb
 import google.protobuf.text_format
-import ipdb
 import pandas as pd
 
 sys.path.append("./")
