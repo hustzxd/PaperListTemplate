@@ -9,6 +9,8 @@ This template makes it easy for you to manage papers.
   - [Getting Started](#getting-started)
   - [Fast Search](#fast-search)
   - [Paper List](#paper-list)
+    - [2023](#2023)
+    - [2021](#2021)
 
 <details><summary><b>References</b></summary>	
 <p>
@@ -116,10 +118,17 @@ keyword {
 
 ## Paper List
 
-|    | meta                                   | title                                                                                                                                                                                                                                    | publication   |   year | code                                                 | note                         |
-|---:|:---------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------|-------:|:-----------------------------------------------------|:-----------------------------|
-|  0 | [OpenVINO](./meta/OpenVINO.prototxt)   | [Post-training deep neural network pruning via layer-wise calibration](https://openaccess.thecvf.com/content/ICCV2021W/LPCV/papers/Lazarevich_Post-Training_Deep_Neural_Network_Pruning_via_Layer-Wise_Calibration_ICCVW_2021_paper.pdf) | ICCV workshop |   2021 |                                                      |                              |
-|  1 | [MVUE](./meta/2U5DXO7C.prototxt)       | [Minimum Variance Unbiased N:M Sparsity for the Neural Gradients](https://openreview.net/pdf?id=vuD2xEtxZcj)                                                                                                                             | ICLR          |   2023 |                                                      |                              |
-|  2 | [SMC](./meta/EHWNTP1V.prototxt)        | [Sparsity May Cry: Let Us Fail (Current) Sparse Neural Networks Together!](https://openreview.net/pdf?id=J6F3lLg4Kdp)                                                                                                                    | ICLR          |   2023 | [SMC-Bench](https://github.com/VITA-Group/SMC-Bench) |                              |
-|  3 | [RPTQ](./meta/RPTQ.prototxt)           | [RPTQ: Reorder-based Post-training Quantization for Large Language Models](https://arxiv.org/pdf/2304.01089.pdf)                                                                                                                         | arXiv         |   2023 | [PyTorch](https://github.com/hahnyuan/RPTQ4LLM)      |                              |
-|  4 | [SparseGPT](./meta/sparsegpt.prototxt) | [SparseGPT: Massive Language Models Can be Accurately Pruned in one-shot.](https://arxiv.org/pdf/2301.00774.pdf)                                                                                                                         | arXiv         |   2023 | [Pytorch](https://github.com/IST-DASLab/sparsegpt)   | [note](./notes/SparseGPT.md) |
+
+### 2023
+
+|    | meta                                       | title                                                                                                                 | publication   |   year | code                                                 | note                             |
+|---:|:-------------------------------------------|:----------------------------------------------------------------------------------------------------------------------|:--------------|-------:|:-----------------------------------------------------|:---------------------------------|
+|  0 | [MVUE](../../meta/2U5DXO7C.prototxt)       | [Minimum Variance Unbiased N:M Sparsity for the Neural Gradients](https://openreview.net/pdf?id=vuD2xEtxZcj)          | ICLR          |   2023 |                                                      |                                  |
+|  1 | [SMC](../../meta/EHWNTP1V.prototxt)        | [Sparsity May Cry: Let Us Fail (Current) Sparse Neural Networks Together!](https://openreview.net/pdf?id=J6F3lLg4Kdp) | ICLR          |   2023 | [SMC-Bench](https://github.com/VITA-Group/SMC-Bench) |                                  |
+|  2 | [RPTQ](../../meta/RPTQ.prototxt)           | [RPTQ: Reorder-based Post-training Quantization for Large Language Models](https://arxiv.org/pdf/2304.01089.pdf)      | arXiv         |   2023 | [PyTorch](https://github.com/hahnyuan/RPTQ4LLM)      |                                  |
+|  3 | [SparseGPT](../../meta/sparsegpt.prototxt) | [SparseGPT: Massive Language Models Can be Accurately Pruned in one-shot.](https://arxiv.org/pdf/2301.00774.pdf)      | arXiv         |   2023 | [Pytorch](https://github.com/IST-DASLab/sparsegpt)   | [note](../../notes/SparseGPT.md) |
+### 2021
+
+|    | meta                                     | title                                                                                                                                                                                                                                    | publication   |   year | code   | note   |
+|---:|:-----------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------|-------:|:-------|:-------|
+|  0 | [OpenVINO](../../meta/OpenVINO.prototxt) | [Post-training deep neural network pruning via layer-wise calibration](https://openaccess.thecvf.com/content/ICCV2021W/LPCV/papers/Lazarevich_Post-Training_Deep_Neural_Network_Pruning_via_Layer-Wise_Calibration_ICCVW_2021_paper.pdf) | ICCV workshop |   2021 |        |        |
