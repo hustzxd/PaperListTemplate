@@ -1,3 +1,0 @@
-|    | meta                              | title                                                                                                                | publication   | code   | note   |
-|---:|:----------------------------------|:---------------------------------------------------------------------------------------------------------------------|:--------------|:-------|:-------|
-|  0 | [m](../../meta/2U5DXO7C.prototxt) | [ (MVUE) Minimum Variance Unbiased N:M Sparsity for the Neural Gradients](https://openreview.net/pdf?id=vuD2xEtxZcj) | ICLR-2023     |        |        |
