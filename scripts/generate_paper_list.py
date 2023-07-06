@@ -205,7 +205,13 @@ def main():
     # markdown += "</details>\n\n"
 
     markdown += "\n## Paper List\n\n"
-    markdown += df.to_markdown()
+    year_cls = dict(sorted(year_cls.items(), reverse=True))
+    for year, data in year_cls.items():
+        df_ = pd.DataFrame(data, columns=columns)
+        df_ = df_.sort_values(by=["year", "publication", "meta"], ascending=True).reset_index(drop=True)
+        markdown += "\n### {}\n\n".format(year)
+        markdown += df_.to_markdown()
+    # markdown += df.to_markdown()
     with open("README.md", "w") as wf:
         wf.write(markdown)
     print("Generate README.md done")
