@@ -36,6 +36,9 @@ def main():
 
     # root_dir = os.getenv("CURRENT_DIR")
     root_dir = "./"
+    if os.path.exists(os.path.join(root_dir, "meta", "{}.prototxt".format(name))):
+        print("The file `{}` already exists, please use another name".format(name))
+        return
     with open(os.path.join(root_dir, "meta", "{}.prototxt".format(name)), "w") as wf:
         print(pinfo)
         print("Writing paper information into {}/meta/{}.prototxt".format(root_dir, name))
