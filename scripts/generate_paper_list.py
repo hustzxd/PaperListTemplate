@@ -131,7 +131,7 @@ def main():
 
     for year, data in year_cls.items():
         df_ = pd.DataFrame(data, columns=columns)
-        df_ = df_.sort_values(by=["year", "publication", "meta"], ascending=True).reset_index(drop=True)
+        df_ = df_.sort_values(by=["year", "publication", "title"], ascending=True).reset_index(drop=True)
         with open("{}/{}.md".format(year_path, year), "w") as wf:
             wf.write(df_.to_markdown())
         print("Generate {}/{}.md done".format(year_path, year))
@@ -143,7 +143,7 @@ def main():
 
     for pub, data in pub_cls.items():
         df_ = pd.DataFrame(data, columns=columns)
-        df_ = df_.sort_values(by=["year", "publication", "meta"], ascending=True).reset_index(drop=True)
+        df_ = df_.sort_values(by=["year", "publication", "title"], ascending=True).reset_index(drop=True)
         with open("{}/{}.md".format(pub_path, pub), "w") as wf:
             wf.write(df_.to_markdown())
         print("Generate {}/{}.md done".format(pub_path, pub))
@@ -155,7 +155,7 @@ def main():
 
     for inst, data in inst_cls.items():
         df_ = pd.DataFrame(data, columns=columns)
-        df_ = df_.sort_values(by=["year", "publication", "meta"], ascending=True).reset_index(drop=True)
+        df_ = df_.sort_values(by=["year", "publication", "title"], ascending=True).reset_index(drop=True)
         with open("{}/{}.md".format(inst_path, inst), "w") as wf:
             wf.write(df_.to_markdown())
         print("Generate {}/{}.md done".format(inst_path, inst))
@@ -167,7 +167,7 @@ def main():
 
     for key, data in author_cls.items():
         df_ = pd.DataFrame(data, columns=columns)
-        df_ = df_.sort_values(by=["year", "publication", "meta"], ascending=True).reset_index(drop=True)
+        df_ = df_.sort_values(by=["year", "publication", "title"], ascending=True).reset_index(drop=True)
         with open("{}/{}.md".format(author_path, key), "w") as wf:
             wf.write(df_.to_markdown())
         print("Generate {}/{}.md done".format(author_path, key))
@@ -179,14 +179,14 @@ def main():
 
     for key, data in keyword_cls.items():
         df_ = pd.DataFrame(data, columns=columns)
-        df_ = df_.sort_values(by=["year", "publication", "meta"], ascending=True).reset_index(drop=True)
+        df_ = df_.sort_values(by=["year", "publication", "title"], ascending=True).reset_index(drop=True)
         with open("{}/{}.md".format(keyword_path, key), "w") as wf:
             wf.write(df_.to_markdown())
         print("Generate {}/{}.md done".format(keyword_path, key))
     
     # 
     df = pd.DataFrame(data_list, columns=columns)
-    df = df.sort_values(by=["year", "publication", "meta"], ascending=True).reset_index(drop=True)
+    df = df.sort_values(by=["year", "publication", "title"], ascending=True).reset_index(drop=True)
     # markdown = """# EfficientPaper\nPruning, Quantization and efficient-inference/training paper list.\n"""
     with open("README_base.md") as rf:
         markdown = rf.read()
@@ -214,7 +214,7 @@ def main():
     year_out_cls = dict(sorted(year_out_cls.items(), reverse=True))
     for year, data in year_out_cls.items():
         df_ = pd.DataFrame(data, columns=columns)
-        df_ = df_.sort_values(by=["year", "publication", "meta"], ascending=True).reset_index(drop=True)
+        df_ = df_.sort_values(by=["year", "publication", "title"], ascending=True).reset_index(drop=True)
         markdown += "\n### {}\n\n".format(year)
         markdown += df_.to_markdown()
     # markdown += df.to_markdown()
