@@ -10,6 +10,7 @@ sys.path.append("./")
 
 from proto import efficient_paper_pb2 as eppb
 
+
 def readMeta():
     pinfos = []
     for f in os.listdir("./meta"):
@@ -26,7 +27,7 @@ def main():
         "meta",
         "title",  # (abbr) [title](url)
         "publication",  # ICLR
-        "year", # 2022
+        "year",  # 2022
         "code",  # [type](url)
         "note",  # [](url)
     ]
@@ -85,7 +86,7 @@ def main():
             year_out_cls[pinfo.pub.year].append(data)
         else:
             year_out_cls[pinfo.pub.year] = [data]
-        
+
         if pinfo.pub.where:
             pub_ = pinfo.pub.where.replace(" ", "-")
             if pub_ in pub_cls:
@@ -183,17 +184,17 @@ def main():
         with open("{}/{}.md".format(keyword_path, key), "w") as wf:
             wf.write(df_.to_markdown())
         print("Generate {}/{}.md done".format(keyword_path, key))
-    
-    # 
+
+    #
     df = pd.DataFrame(data_list, columns=columns)
     df = df.sort_values(by=["year", "publication", "title"], ascending=True).reset_index(drop=True)
     # markdown = """# EfficientPaper\nPruning, Quantization and efficient-inference/training paper list.\n"""
     with open("README_base.md") as rf:
         markdown = rf.read()
     markdown += "\n\n"
-    
+
     # add fast search
-    byclasses = os.listdir('./fast_search')
+    byclasses = os.listdir("./fast_search")
     markdown += "## Fast Search \n"
     # markdown += "<details><summary><b>search by classify</b></summary> \n"
     # markdown += "<p>\n"
@@ -201,7 +202,7 @@ def main():
     for byclass in byclasses:
         markdown += "<details><summary><b>{}</b></summary> \n".format(byclass)
         markdown += "<p>\n\n"
-        ks = os.listdir('./fast_search/{}'.format(byclass))
+        ks = os.listdir("./fast_search/{}".format(byclass))
         ks.sort()
         for k in ks:
             markdown += "1. [{}](./fast_search/{}/{}) \n".format(k, byclass, k)
