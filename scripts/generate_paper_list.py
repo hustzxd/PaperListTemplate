@@ -79,7 +79,7 @@ def main():
         if pinfo.cover.url:
             if not pinfo.cover.url.startswith("http"):
                 cover = "./notes/{}".format(pinfo.cover.url)
-                cover_inner = "../../notes/{})".format(pinfo.cover.url)
+                cover_inner = "../../notes/{}".format(pinfo.cover.url)
             else:
                 cover = pinfo.cover.url
                 cover_inner = pinfo.cover.url
