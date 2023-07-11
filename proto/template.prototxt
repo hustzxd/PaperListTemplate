@@ -22,3 +22,6 @@ keyword {
   words: "key1"
   words: "key2"
 }
+cover {
+  url: ""
+}

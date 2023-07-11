@@ -30,6 +30,7 @@ def main():
         "year",  # 2022
         "code",  # [type](url)
         "note",  # [](url)
+        "cover", # <img width='400' alt='image' src='cover.jpg'>
     ]
     pinfos = readMeta()
     data_list = []
@@ -73,8 +74,21 @@ def main():
                 note = "[note]({})".format(pinfo.note.url)
                 note_inner = note
 
-        data = [meta, title, pub, year, code, note]
-        data_inner = [meta_inner, title, pub, year, code, note_inner]
+        cover = ""
+        cover_inner = ""
+        if pinfo.cover.url:
+            if not pinfo.cover.url.startswith("http"):
+                cover = "./notes/{}".format(pinfo.cover.url)
+                cover_inner = "../../notes/{})".format(pinfo.cover.url)
+            else:
+                cover = pinfo.cover.url
+                cover_inner = pinfo.cover.url
+            
+            cover = "<img width='400' alt='image' src='{}'>".format(cover)
+            cover_inner = "<img width='400' alt='image' src='{}'>".format(cover_inner)
+
+        data = [meta, title, pub, year, code, note, cover]
+        data_inner = [meta_inner, title, pub, year, code, note_inner, cover_inner]
 
         if pinfo.pub.year:
             if pinfo.pub.year in year_cls:
