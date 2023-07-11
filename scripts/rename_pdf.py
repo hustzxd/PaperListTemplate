@@ -1,9 +1,9 @@
+import argparse
 import os
 import string
-import argparse
 
+import ipdb
 from pdftitle import get_title_from_file
-
 
 CNT_FAILED = 0
 CNT_SUCCESS = 0
@@ -24,13 +24,23 @@ def rename_all_files(rootdir):
                 valid_chars = set(string.ascii_lowercase + string.digits + " ")
                 new_name = "".join(c for c in new_name if c in valid_chars)
                 new_name = new_name.replace(" ", "_") + ".pdf"
-                new_name_path = os.path.join(rootdir, new_name)
-                os.rename(path, new_name_path)
-                print("{} => {}".format(path, new_name))
-                CNT_SUCCESS += 1
+                if is_better_name(l1[i], new_name):
+                    new_name_path = os.path.join(rootdir, new_name)
+                    os.rename(path, new_name_path)
+                    print("{} => {}".format(path, new_name))
+                    CNT_SUCCESS += 1
+                CNT_FAILED += 1
             except Exception:
                 CNT_FAILED += 1
                 pass
+
+
+def is_better_name(old_name, new_name):
+    if "_" not in new_name:
+        return False
+    if len(old_name) >= len(new_name):
+        return False
+    return True
 
 
 if __name__ == "__main__":
