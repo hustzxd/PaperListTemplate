@@ -8,6 +8,7 @@ message PaperInfo {
     optional Code code = 3;
     optional Note note = 4;
     optional Keyword keyword = 5;
+    optional Cover cover = 6;
 }
 
 message Paper {
@@ -29,6 +30,10 @@ message Code {
 }
 
 message Note {
+    optional string url = 1;
+}
+
+message Cover {
     optional string url = 1;
 }
 

@@ -16,8 +16,11 @@ code {
   url: "https://github.com/IST-DASLab/sparsegpt"
 }
 note {
-  url: "SparseGPT.md"
+  url: "sparsegpt/SparseGPT.md"
 }
 keyword {
   words: "sparsity"
+}
+cover {
+  url: "sparsegpt/cover.jpg"
 }

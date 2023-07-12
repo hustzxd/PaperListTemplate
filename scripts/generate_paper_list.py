@@ -10,6 +10,7 @@ sys.path.append("./")
 
 from proto import efficient_paper_pb2 as eppb
 
+
 def readMeta():
     pinfos = []
     for f in os.listdir("./meta"):
@@ -26,9 +27,10 @@ def main():
         "meta",
         "title",  # (abbr) [title](url)
         "publication",  # ICLR
-        "year", # 2022
+        "year",  # 2022
         "code",  # [type](url)
         "note",  # [](url)
+        "cover", # <img width='400' alt='image' src='cover.jpg'>
     ]
     pinfos = readMeta()
     data_list = []
@@ -72,8 +74,21 @@ def main():
                 note = "[note]({})".format(pinfo.note.url)
                 note_inner = note
 
-        data = [meta, title, pub, year, code, note]
-        data_inner = [meta_inner, title, pub, year, code, note_inner]
+        cover = ""
+        cover_inner = ""
+        if pinfo.cover.url:
+            if not pinfo.cover.url.startswith("http"):
+                cover = "./notes/{}".format(pinfo.cover.url)
+                cover_inner = "../../notes/{}".format(pinfo.cover.url)
+            else:
+                cover = pinfo.cover.url
+                cover_inner = pinfo.cover.url
+            
+            cover = "<img width='400' alt='image' src='{}'>".format(cover)
+            cover_inner = "<img width='400' alt='image' src='{}'>".format(cover_inner)
+
+        data = [meta, title, pub, year, code, note, cover]
+        data_inner = [meta_inner, title, pub, year, code, note_inner, cover_inner]
 
         if pinfo.pub.year:
             if pinfo.pub.year in year_cls:
@@ -85,7 +100,7 @@ def main():
             year_out_cls[pinfo.pub.year].append(data)
         else:
             year_out_cls[pinfo.pub.year] = [data]
-        
+
         if pinfo.pub.where:
             pub_ = pinfo.pub.where.replace(" ", "-")
             if pub_ in pub_cls:
@@ -183,17 +198,17 @@ def main():
         with open("{}/{}.md".format(keyword_path, key), "w") as wf:
             wf.write(df_.to_markdown())
         print("Generate {}/{}.md done".format(keyword_path, key))
-    
-    # 
+
+    #
     df = pd.DataFrame(data_list, columns=columns)
     df = df.sort_values(by=["year", "publication", "title"], ascending=True).reset_index(drop=True)
     # markdown = """# EfficientPaper\nPruning, Quantization and efficient-inference/training paper list.\n"""
     with open("README_base.md") as rf:
         markdown = rf.read()
     markdown += "\n\n"
-    
+
     # add fast search
-    byclasses = os.listdir('./fast_search')
+    byclasses = os.listdir("./fast_search")
     markdown += "## Fast Search \n"
     # markdown += "<details><summary><b>search by classify</b></summary> \n"
     # markdown += "<p>\n"
@@ -201,7 +216,7 @@ def main():
     for byclass in byclasses:
         markdown += "<details><summary><b>{}</b></summary> \n".format(byclass)
         markdown += "<p>\n\n"
-        ks = os.listdir('./fast_search/{}'.format(byclass))
+        ks = os.listdir("./fast_search/{}".format(byclass))
         ks.sort()
         for k in ks:
             markdown += "1. [{}](./fast_search/{}/{}) \n".format(k, byclass, k)

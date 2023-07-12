@@ -13,7 +13,6 @@ sys.path.append("./")
 from proto import efficient_paper_pb2 as eppb
 
 
-
 def get_hash_code(message):
     hash = hashlib.sha1(message.encode("UTF-8")).hexdigest()
     return hash[:8]
