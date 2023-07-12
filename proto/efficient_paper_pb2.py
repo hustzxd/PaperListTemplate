@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='efficient_paper.proto',
   package='efficient_paper',
   syntax='proto2',
-  serialized_pb=_b('\n\x15\x65\x66\x66icient_paper.proto\x12\x0f\x65\x66\x66icient_paper\"\xd2\x01\n\tPaperInfo\x12%\n\x05paper\x18\x01 \x01(\x0b\x32\x16.efficient_paper.Paper\x12)\n\x03pub\x18\x02 \x01(\x0b\x32\x1c.efficient_paper.Publication\x12#\n\x04\x63ode\x18\x03 \x01(\x0b\x32\x15.efficient_paper.Code\x12#\n\x04note\x18\x04 \x01(\x0b\x32\x15.efficient_paper.Note\x12)\n\x07keyword\x18\x05 \x01(\x0b\x32\x18.efficient_paper.Keyword\"k\n\x05Paper\x12\x1a\n\x05title\x18\x01 \x01(\t:\x0bpaper title\x12\x12\n\x04\x61\x62\x62r\x18\x02 \x01(\t:\x04\x61\x62\x62r\x12\x0b\n\x03url\x18\x03 \x01(\t\x12\x0f\n\x07\x61uthors\x18\x04 \x03(\t\x12\x14\n\x0cinstitutions\x18\x05 \x03(\t\"*\n\x0bPublication\x12\r\n\x05where\x18\x01 \x01(\t\x12\x0c\n\x04year\x18\x02 \x01(\x05\"*\n\x04\x43ode\x12\x15\n\x04type\x18\x01 \x01(\t:\x07Pytorch\x12\x0b\n\x03url\x18\x02 \x01(\t\"\x13\n\x04Note\x12\x0b\n\x03url\x18\x01 \x01(\t\"\x18\n\x07Keyword\x12\r\n\x05words\x18\x01 \x03(\t')
+  serialized_pb=_b('\n\x15\x65\x66\x66icient_paper.proto\x12\x0f\x65\x66\x66icient_paper\"\xf9\x01\n\tPaperInfo\x12%\n\x05paper\x18\x01 \x01(\x0b\x32\x16.efficient_paper.Paper\x12)\n\x03pub\x18\x02 \x01(\x0b\x32\x1c.efficient_paper.Publication\x12#\n\x04\x63ode\x18\x03 \x01(\x0b\x32\x15.efficient_paper.Code\x12#\n\x04note\x18\x04 \x01(\x0b\x32\x15.efficient_paper.Note\x12)\n\x07keyword\x18\x05 \x01(\x0b\x32\x18.efficient_paper.Keyword\x12%\n\x05\x63over\x18\x06 \x01(\x0b\x32\x16.efficient_paper.Cover\"k\n\x05Paper\x12\x1a\n\x05title\x18\x01 \x01(\t:\x0bpaper title\x12\x12\n\x04\x61\x62\x62r\x18\x02 \x01(\t:\x04\x61\x62\x62r\x12\x0b\n\x03url\x18\x03 \x01(\t\x12\x0f\n\x07\x61uthors\x18\x04 \x03(\t\x12\x14\n\x0cinstitutions\x18\x05 \x03(\t\"*\n\x0bPublication\x12\r\n\x05where\x18\x01 \x01(\t\x12\x0c\n\x04year\x18\x02 \x01(\x05\"*\n\x04\x43ode\x12\x15\n\x04type\x18\x01 \x01(\t:\x07Pytorch\x12\x0b\n\x03url\x18\x02 \x01(\t\"\x13\n\x04Note\x12\x0b\n\x03url\x18\x01 \x01(\t\"\x14\n\x05\x43over\x12\x0b\n\x03url\x18\x01 \x01(\t\"\x18\n\x07Keyword\x12\r\n\x05words\x18\x01 \x03(\t')
 )
 
 
@@ -67,6 +67,13 @@ _PAPERINFO = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='cover', full_name='efficient_paper.PaperInfo.cover', index=5,
+      number=6, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -80,7 +87,7 @@ _PAPERINFO = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=43,
-  serialized_end=253,
+  serialized_end=292,
 )
 
 
@@ -138,8 +145,8 @@ _PAPER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=255,
-  serialized_end=362,
+  serialized_start=294,
+  serialized_end=401,
 )
 
 
@@ -176,8 +183,8 @@ _PUBLICATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=364,
-  serialized_end=406,
+  serialized_start=403,
+  serialized_end=445,
 )
 
 
@@ -214,8 +221,8 @@ _CODE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=408,
-  serialized_end=450,
+  serialized_start=447,
+  serialized_end=489,
 )
 
 
@@ -245,8 +252,39 @@ _NOTE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=452,
-  serialized_end=471,
+  serialized_start=491,
+  serialized_end=510,
+)
+
+
+_COVER = _descriptor.Descriptor(
+  name='Cover',
+  full_name='efficient_paper.Cover',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='url', full_name='efficient_paper.Cover.url', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=512,
+  serialized_end=532,
 )
 
 
@@ -276,8 +314,8 @@ _KEYWORD = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=473,
-  serialized_end=497,
+  serialized_start=534,
+  serialized_end=558,
 )
 
 _PAPERINFO.fields_by_name['paper'].message_type = _PAPER
@@ -285,11 +323,13 @@ _PAPERINFO.fields_by_name['pub'].message_type = _PUBLICATION
 _PAPERINFO.fields_by_name['code'].message_type = _CODE
 _PAPERINFO.fields_by_name['note'].message_type = _NOTE
 _PAPERINFO.fields_by_name['keyword'].message_type = _KEYWORD
+_PAPERINFO.fields_by_name['cover'].message_type = _COVER
 DESCRIPTOR.message_types_by_name['PaperInfo'] = _PAPERINFO
 DESCRIPTOR.message_types_by_name['Paper'] = _PAPER
 DESCRIPTOR.message_types_by_name['Publication'] = _PUBLICATION
 DESCRIPTOR.message_types_by_name['Code'] = _CODE
 DESCRIPTOR.message_types_by_name['Note'] = _NOTE
+DESCRIPTOR.message_types_by_name['Cover'] = _COVER
 DESCRIPTOR.message_types_by_name['Keyword'] = _KEYWORD
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -327,6 +367,13 @@ Note = _reflection.GeneratedProtocolMessageType('Note', (_message.Message,), dic
   # @@protoc_insertion_point(class_scope:efficient_paper.Note)
   ))
 _sym_db.RegisterMessage(Note)
+
+Cover = _reflection.GeneratedProtocolMessageType('Cover', (_message.Message,), dict(
+  DESCRIPTOR = _COVER,
+  __module__ = 'efficient_paper_pb2'
+  # @@protoc_insertion_point(class_scope:efficient_paper.Cover)
+  ))
+_sym_db.RegisterMessage(Cover)
 
 Keyword = _reflection.GeneratedProtocolMessageType('Keyword', (_message.Message,), dict(
   DESCRIPTOR = _KEYWORD,
