@@ -10,7 +10,7 @@ This template makes it easy for you to manage papers.
   - [Fast Search](#fast-search)
   - [Paper List](#paper-list)
 
-<details><summary><b>References</b></summary>	
+<details><summary><b>References</b></summary>
 <p>
 
 1. https://github.com/he-y/Awesome-Pruning
@@ -26,7 +26,7 @@ This template makes it easy for you to manage papers.
 1. Add paper information by `./add_paper_info.sh` or  `./add_paper_info.sh <name>`
 2. Run `./refresh_readme.sh`
 
-<details><summary><b>sparsegpt.prototxt</b></summary>	
+<details><summary><b>sparsegpt.prototxt</b></summary>
 <p>
 
 ```
@@ -57,5 +57,3 @@ keyword {
 
 </p>
 </details>
-
-

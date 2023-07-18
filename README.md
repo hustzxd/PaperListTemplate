@@ -10,7 +10,7 @@ This template makes it easy for you to manage papers.
   - [Fast Search](#fast-search)
   - [Paper List](#paper-list)
 
-<details><summary><b>References</b></summary>	
+<details><summary><b>References</b></summary>
 <p>
 
 1. https://github.com/he-y/Awesome-Pruning
@@ -26,7 +26,7 @@ This template makes it easy for you to manage papers.
 1. Add paper information by `./add_paper_info.sh` or  `./add_paper_info.sh <name>`
 2. Run `./refresh_readme.sh`
 
-<details><summary><b>sparsegpt.prototxt</b></summary>	
+<details><summary><b>sparsegpt.prototxt</b></summary>
 <p>
 
 ```
@@ -59,58 +59,56 @@ keyword {
 </details>
 
 
-
-
-## Fast Search 
-<details><summary><b>year</b></summary> 
+## Fast Search
+<details><summary><b>year</b></summary>
 <p>
 
-1. [2021.md](./fast_search/year/2021.md) 
-1. [2023.md](./fast_search/year/2023.md) 
+1. [2021.md](./fast_search/year/2021.md)
+1. [2023.md](./fast_search/year/2023.md)
 </p>
 </details>
-<details><summary><b>inst</b></summary> 
+<details><summary><b>inst</b></summary>
 <p>
 
-1. [Eindhoven-University-of-Technology.md](./fast_search/inst/Eindhoven-University-of-Technology.md) 
-1. [Habana-Labs.md](./fast_search/inst/Habana-Labs.md) 
-1. [Houmo-AI.md](./fast_search/inst/Houmo-AI.md) 
-1. [IST-Austria.md](./fast_search/inst/IST-Austria.md) 
-1. [Intel-Corporation.md](./fast_search/inst/Intel-Corporation.md) 
-1. [Neural-Magic.md](./fast_search/inst/Neural-Magic.md) 
-1. [Tencent-AI-Lab.md](./fast_search/inst/Tencent-AI-Lab.md) 
-1. [University-of-Texas-at-Austin.md](./fast_search/inst/University-of-Texas-at-Austin.md) 
+1. [Eindhoven-University-of-Technology.md](./fast_search/inst/Eindhoven-University-of-Technology.md)
+1. [Habana-Labs.md](./fast_search/inst/Habana-Labs.md)
+1. [Houmo-AI.md](./fast_search/inst/Houmo-AI.md)
+1. [IST-Austria.md](./fast_search/inst/IST-Austria.md)
+1. [Intel-Corporation.md](./fast_search/inst/Intel-Corporation.md)
+1. [Neural-Magic.md](./fast_search/inst/Neural-Magic.md)
+1. [Tencent-AI-Lab.md](./fast_search/inst/Tencent-AI-Lab.md)
+1. [University-of-Texas-at-Austin.md](./fast_search/inst/University-of-Texas-at-Austin.md)
 </p>
 </details>
-<details><summary><b>keyword</b></summary> 
+<details><summary><b>keyword</b></summary>
 <p>
 
-1. [quantization.md](./fast_search/keyword/quantization.md) 
-1. [sparse.md](./fast_search/keyword/sparse.md) 
-1. [sparsity.md](./fast_search/keyword/sparsity.md) 
+1. [quantization.md](./fast_search/keyword/quantization.md)
+1. [sparse.md](./fast_search/keyword/sparse.md)
+1. [sparsity.md](./fast_search/keyword/sparsity.md)
 </p>
 </details>
-<details><summary><b>pub</b></summary> 
+<details><summary><b>pub</b></summary>
 <p>
 
-1. [ICCV-workshop.md](./fast_search/pub/ICCV-workshop.md) 
-1. [ICLR.md](./fast_search/pub/ICLR.md) 
-1. [arXiv.md](./fast_search/pub/arXiv.md) 
+1. [ICCV-workshop.md](./fast_search/pub/ICCV-workshop.md)
+1. [ICLR.md](./fast_search/pub/ICLR.md)
+1. [arXiv.md](./fast_search/pub/arXiv.md)
 </p>
 </details>
-<details><summary><b>author</b></summary> 
+<details><summary><b>author</b></summary>
 <p>
 
-1. [Bingzhe-Wu.md](./fast_search/author/Bingzhe-Wu.md) 
-1. [Brian-Chmiel.md](./fast_search/author/Brian-Chmiel.md) 
-1. [Dan-Alistarh.md](./fast_search/author/Dan-Alistarh.md) 
-1. [Daniel-Soudry.md](./fast_search/author/Daniel-Soudry.md) 
-1. [Elias-Frantar.md](./fast_search/author/Elias-Frantar.md) 
-1. [Ivan-Lazarevich.md](./fast_search/author/Ivan-Lazarevich.md) 
-1. [Nikita-Malinin.md](./fast_search/author/Nikita-Malinin.md) 
-1. [Shiwei-Liu.md](./fast_search/author/Shiwei-Liu.md) 
-1. [Zhangyang-Wang.md](./fast_search/author/Zhangyang-Wang.md) 
-1. [Zhihang-Yuan.md](./fast_search/author/Zhihang-Yuan.md) 
+1. [Bingzhe-Wu.md](./fast_search/author/Bingzhe-Wu.md)
+1. [Brian-Chmiel.md](./fast_search/author/Brian-Chmiel.md)
+1. [Dan-Alistarh.md](./fast_search/author/Dan-Alistarh.md)
+1. [Daniel-Soudry.md](./fast_search/author/Daniel-Soudry.md)
+1. [Elias-Frantar.md](./fast_search/author/Elias-Frantar.md)
+1. [Ivan-Lazarevich.md](./fast_search/author/Ivan-Lazarevich.md)
+1. [Nikita-Malinin.md](./fast_search/author/Nikita-Malinin.md)
+1. [Shiwei-Liu.md](./fast_search/author/Shiwei-Liu.md)
+1. [Zhangyang-Wang.md](./fast_search/author/Zhangyang-Wang.md)
+1. [Zhihang-Yuan.md](./fast_search/author/Zhihang-Yuan.md)
 </p>
 </details>
 
