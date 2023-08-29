@@ -18,6 +18,7 @@ This template makes it easy for you to manage papers.
 3. https://github.com/csyhhu/Awesome-Deep-Neural-Network-Compression/tree/master
 4. https://github.com/AojunZhou/Efficient-Deep-Learning
 5. https://github.com/chester256/Model-Compression-Papers
+6. https://github.com/HuangOwen/Awesome-LLM-Compression
 
 </p>
 </details>
