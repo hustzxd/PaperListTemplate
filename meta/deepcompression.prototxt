@@ -1,0 +1,25 @@
+paper {
+  title: "Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding"
+  abbr: "Deep Compression"
+  url: ""
+  authors: "Song Han"
+  institutions: "Stanford University"
+}
+pub {
+  where: "ICLR"
+  year: 2016
+}
+code {
+  type: "Pytorch"
+  url: ""
+}
+note {
+  url: ""
+}
+keyword {
+  words: "key1"
+  words: "key2"
+}
+cover {
+  url: ""
+}
