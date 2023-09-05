@@ -1,0 +1,20 @@
+paper {
+  title: "HomoDistil: Homotopic Task-Agnostic Distillation of Pre-trained Transformers"
+  abbr: "abbr"
+  url: "https://openreview.net/forum?id=D7srTrGhAs"
+  authors: "Name1"
+  authors: "Name2"
+  institutions: "inst1"
+  institutions: "inst2"
+}
+pub {
+  where: "ICLR"
+  year: 2023
+}
+code {
+  type: "Pytorch"
+  url: ""
+}
+note {
+  url: ""
+}

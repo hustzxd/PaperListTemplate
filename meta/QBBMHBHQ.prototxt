@@ -1,0 +1,20 @@
+paper {
+  title: "OTOv2: Automatic, Generic, User-Friendly"
+  abbr: "OTOv2"
+  url: "https://openreview.net/forum?id=7ynoX1ojPMt"
+  authors: "Name1"
+  authors: "Name2"
+  institutions: "inst1"
+  institutions: "inst2"
+}
+pub {
+  where: "ICLR"
+  year: 2023
+}
+code {
+  type: "Pytorch"
+  url: "https://github.com/tianyic/only_train_once"
+}
+note {
+  url: ""
+}

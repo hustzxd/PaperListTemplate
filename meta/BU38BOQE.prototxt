@@ -1,0 +1,20 @@
+paper {
+  title: "A General Framework For Proving The Equivariant Strong Lottery Ticket Hypothesis"
+  abbr: "abbr"
+  url: "https://openreview.net/forum?id=vVJZtlZB9D"
+  authors: "Name1"
+  authors: "Name2"
+  institutions: "inst1"
+  institutions: "inst2"
+}
+pub {
+  where: "ICLR"
+  year: 2023
+}
+code {
+  type: "Pytorch"
+  url: ""
+}
+note {
+  url: ""
+}
