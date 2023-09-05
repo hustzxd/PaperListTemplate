@@ -7,20 +7,7 @@ This template makes it easy for you to manage papers.
 - [Paper List Template](#paper-list-template)
   - [Table of Contents](#table-of-contents)
   - [Getting Started](#getting-started)
-  - [Fast Search](#fast-search)
-  - [Paper List](#paper-list)
 
-<details><summary><b>References</b></summary>
-<p>
-
-1. https://github.com/he-y/Awesome-Pruning
-2. https://github.com/htqin/awesome-model-quantization
-3. https://github.com/csyhhu/Awesome-Deep-Neural-Network-Compression/tree/master
-4. https://github.com/AojunZhou/Efficient-Deep-Learning
-5. https://github.com/chester256/Model-Compression-Papers
-
-</p>
-</details>
 
 ## Getting Started
 1. Add paper information by `./add_paper_info.sh` or  `./add_paper_info.sh <name>`
