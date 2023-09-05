@@ -164,7 +164,7 @@ def main():
 
 def gen_table(out_cls, columns, cls_name, is_open=False):
     markdown = ""
-    out_cls = dict(sorted(out_cls.items(), reverse=True))
+    out_cls = dict(sorted(out_cls.items(), reverse=False))
     if is_open:
         markdown += (
             """<details open><summary>\n\n### {}\n</summary> \n<p>\n\n""".format(
