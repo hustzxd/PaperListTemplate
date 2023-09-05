@@ -19,10 +19,40 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='efficient_paper',
   syntax='proto2',
   serialized_options=None,
-  serialized_pb=_b('\n\x15\x65\x66\x66icient_paper.proto\x12\x0f\x65\x66\x66icient_paper\"\xf9\x01\n\tPaperInfo\x12%\n\x05paper\x18\x01 \x01(\x0b\x32\x16.efficient_paper.Paper\x12)\n\x03pub\x18\x02 \x01(\x0b\x32\x1c.efficient_paper.Publication\x12#\n\x04\x63ode\x18\x03 \x01(\x0b\x32\x15.efficient_paper.Code\x12#\n\x04note\x18\x04 \x01(\x0b\x32\x15.efficient_paper.Note\x12)\n\x07keyword\x18\x05 \x01(\x0b\x32\x18.efficient_paper.Keyword\x12%\n\x05\x63over\x18\x06 \x01(\x0b\x32\x16.efficient_paper.Cover\"k\n\x05Paper\x12\x1a\n\x05title\x18\x01 \x01(\t:\x0bpaper title\x12\x12\n\x04\x61\x62\x62r\x18\x02 \x01(\t:\x04\x61\x62\x62r\x12\x0b\n\x03url\x18\x03 \x01(\t\x12\x0f\n\x07\x61uthors\x18\x04 \x03(\t\x12\x14\n\x0cinstitutions\x18\x05 \x03(\t\"*\n\x0bPublication\x12\r\n\x05where\x18\x01 \x01(\t\x12\x0c\n\x04year\x18\x02 \x01(\x05\"*\n\x04\x43ode\x12\x15\n\x04type\x18\x01 \x01(\t:\x07Pytorch\x12\x0b\n\x03url\x18\x02 \x01(\t\"\x13\n\x04Note\x12\x0b\n\x03url\x18\x01 \x01(\t\"\x14\n\x05\x43over\x12\x0b\n\x03url\x18\x01 \x01(\t\"\x18\n\x07Keyword\x12\r\n\x05words\x18\x01 \x03(\t')
+  serialized_pb=_b('\n\x15\x65\x66\x66icient_paper.proto\x12\x0f\x65\x66\x66icient_paper\"\xf9\x01\n\tPaperInfo\x12%\n\x05paper\x18\x01 \x01(\x0b\x32\x16.efficient_paper.Paper\x12)\n\x03pub\x18\x02 \x01(\x0b\x32\x1c.efficient_paper.Publication\x12#\n\x04\x63ode\x18\x03 \x01(\x0b\x32\x15.efficient_paper.Code\x12#\n\x04note\x18\x04 \x01(\x0b\x32\x15.efficient_paper.Note\x12)\n\x07keyword\x18\x05 \x01(\x0b\x32\x18.efficient_paper.Keyword\x12%\n\x05\x63over\x18\x06 \x01(\x0b\x32\x16.efficient_paper.Cover\"k\n\x05Paper\x12\x1a\n\x05title\x18\x01 \x01(\t:\x0bpaper title\x12\x12\n\x04\x61\x62\x62r\x18\x02 \x01(\t:\x04\x61\x62\x62r\x12\x0b\n\x03url\x18\x03 \x01(\t\x12\x0f\n\x07\x61uthors\x18\x04 \x03(\t\x12\x14\n\x0cinstitutions\x18\x05 \x03(\t\"*\n\x0bPublication\x12\r\n\x05where\x18\x01 \x01(\t\x12\x0c\n\x04year\x18\x02 \x01(\x05\"*\n\x04\x43ode\x12\x15\n\x04type\x18\x01 \x01(\t:\x07Pytorch\x12\x0b\n\x03url\x18\x02 \x01(\t\"\x13\n\x04Note\x12\x0b\n\x03url\x18\x01 \x01(\t\"\x14\n\x05\x43over\x12\x0b\n\x03url\x18\x01 \x01(\t\"{\n\x07Keyword\x12,\n\x05words\x18\x01 \x03(\x0e\x32\x1d.efficient_paper.Keyword.Word\"B\n\x04Word\x12\x08\n\x04none\x10\x01\x12\x12\n\x0esparse_pruning\x10\x02\x12\x10\n\x0cquantization\x10\x03\x12\n\n\x06survey\x10\x04')
 )
 
 
+
+_KEYWORD_WORD = _descriptor.EnumDescriptor(
+  name='Word',
+  full_name='efficient_paper.Keyword.Word',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='none', index=0, number=1,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='sparse_pruning', index=1, number=2,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='quantization', index=2, number=3,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='survey', index=3, number=4,
+      serialized_options=None,
+      type=None),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=591,
+  serialized_end=657,
+)
+_sym_db.RegisterEnumDescriptor(_KEYWORD_WORD)
 
 
 _PAPERINFO = _descriptor.Descriptor(
@@ -297,7 +327,7 @@ _KEYWORD = _descriptor.Descriptor(
   fields=[
     _descriptor.FieldDescriptor(
       name='words', full_name='efficient_paper.Keyword.words', index=0,
-      number=1, type=9, cpp_type=9, label=3,
+      number=1, type=14, cpp_type=8, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -307,6 +337,7 @@ _KEYWORD = _descriptor.Descriptor(
   ],
   nested_types=[],
   enum_types=[
+    _KEYWORD_WORD,
   ],
   serialized_options=None,
   is_extendable=False,
@@ -315,7 +346,7 @@ _KEYWORD = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=534,
-  serialized_end=558,
+  serialized_end=657,
 )
 
 _PAPERINFO.fields_by_name['paper'].message_type = _PAPER
@@ -324,6 +355,8 @@ _PAPERINFO.fields_by_name['code'].message_type = _CODE
 _PAPERINFO.fields_by_name['note'].message_type = _NOTE
 _PAPERINFO.fields_by_name['keyword'].message_type = _KEYWORD
 _PAPERINFO.fields_by_name['cover'].message_type = _COVER
+_KEYWORD.fields_by_name['words'].enum_type = _KEYWORD_WORD
+_KEYWORD_WORD.containing_type = _KEYWORD
 DESCRIPTOR.message_types_by_name['PaperInfo'] = _PAPERINFO
 DESCRIPTOR.message_types_by_name['Paper'] = _PAPER
 DESCRIPTOR.message_types_by_name['Publication'] = _PUBLICATION

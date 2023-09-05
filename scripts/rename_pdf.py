@@ -2,7 +2,6 @@ import argparse
 import os
 import string
 
-import ipdb
 from pdftitle import get_title_from_file
 
 CNT_FAILED = 0
@@ -44,7 +43,9 @@ def is_better_name(old_name, new_name):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(prog="pdftitle", description="Extracts the title of a PDF article", epilog="")
+    parser = argparse.ArgumentParser(
+        prog="pdftitle", description="Extracts the title of a PDF article", epilog=""
+    )
     parser.add_argument("--dir", help="pdf directory", default="pdfs", required=False)
     args = parser.parse_args()
     rename_all_files(args.dir)

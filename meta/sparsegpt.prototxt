@@ -19,7 +19,7 @@ note {
   url: "sparsegpt/SparseGPT.md"
 }
 keyword {
-  words: "sparsity"
+  words: sparse_pruning
 }
 cover {
   url: "sparsegpt/cover.jpg"
