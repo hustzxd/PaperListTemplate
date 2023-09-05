@@ -18,5 +18,5 @@ note {
   url: ""
 }
 keyword {
-  words: "sparsity"
+  words: sparse_pruning
 }

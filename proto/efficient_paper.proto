@@ -38,5 +38,12 @@ message Cover {
 }
 
 message Keyword {
-    repeated string words = 1;
+    repeated Word words = 1;
+        enum Word {
+        none = 1;
+        sparse_pruning = 2;
+        quantization = 3;
+        survey = 4;
+        // TODO: please add your key words here.
+    }
 }

@@ -15,12 +15,23 @@ sys.path.append("./")
 def readMeta():
     pinfos = []
     for f in os.listdir("./meta"):
-        print(f)
         pinfo = eppb.PaperInfo()
-        with open(os.path.join("./meta", f), "r") as rf:
-            pb.text_format.Merge(rf.read(), pinfo)
-        pinfos.append((pinfo, f))
+        try:
+            with open(os.path.join("./meta", f), "r") as rf:
+                pb.text_format.Merge(rf.read(), pinfo)
+            pinfos.append((pinfo, f))
+        except:
+            print("read error in {}".format(f))
+
     return pinfos
+
+
+word_pb2str = {
+    eppb.Keyword.Word.none: "None",
+    eppb.Keyword.Word.sparse_pruning: "Sparse/Pruning",
+    eppb.Keyword.Word.quantization: "Quantization",
+    eppb.Keyword.Word.survey: "Survey",
+}
 
 
 def main():
@@ -87,7 +98,8 @@ def main():
                 year_cls[pinfo.pub.year] = [data]
 
         if pinfo.pub.where:
-            pub_ = pinfo.pub.where.replace(" ", "-")
+            # pub_ = pinfo.pub.where.replace(" ", "-")
+            pub_ = pinfo.pub.where
             if pub_ in pub_cls:
                 pub_cls[pub_].append(data)
             else:
@@ -95,7 +107,7 @@ def main():
 
         if pinfo.paper.institutions:
             for inst in pinfo.paper.institutions:
-                inst = inst.replace(" ", "-")
+                # inst = inst.replace(" ", "-")
                 if inst in inst_cls:
                     inst_cls[inst].append(data)
                 else:
@@ -103,7 +115,7 @@ def main():
 
         if pinfo.paper.authors:
             for author in pinfo.paper.authors:
-                author = author.replace(" ", "-")
+                # author = author.replace(" ", "-")
                 if author in author_cls:
                     author_cls[author].append(data)
                 else:
@@ -111,7 +123,8 @@ def main():
 
         if pinfo.keyword.words:
             for word in pinfo.keyword.words:
-                word = word.replace(" ", "-")
+                word = word_pb2str[word]
+                # word = word.replace(" ", "-")
                 if word in keyword_cls:
                     keyword_cls[word].append(data)
                 else:

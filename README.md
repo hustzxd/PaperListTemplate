@@ -55,23 +55,17 @@ keyword {
 </summary>
 <p>
 
-<details><summary><b>sparsity</b></summary>
+<details><summary><b>Sparse/Pruning</b></summary>
 <p>
 
-|    | meta                                   | title                                                                                                                                                                                                                                    | publication   |   year | code                                               | note                                   | cover                                                           |
-|---:|:---------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------|-------:|:---------------------------------------------------|:---------------------------------------|:----------------------------------------------------------------|
-|  0 | [OpenVINO](./meta/OpenVINO.prototxt)   | [Post-training deep neural network pruning via layer-wise calibration](https://openaccess.thecvf.com/content/ICCV2021W/LPCV/papers/Lazarevich_Post-Training_Deep_Neural_Network_Pruning_via_Layer-Wise_Calibration_ICCVW_2021_paper.pdf) | ICCV workshop |   2021 |                                                    |                                        |                                                                 |
-|  1 | [SparseGPT](./meta/sparsegpt.prototxt) | [SparseGPT: Massive Language Models Can be Accurately Pruned in one-shot.](https://arxiv.org/pdf/2301.00774.pdf)                                                                                                                         | arXiv         |   2023 | [Pytorch](https://github.com/IST-DASLab/sparsegpt) | [note](./notes/sparsegpt/SparseGPT.md) | <img width='400' alt='image' src='./notes/sparsegpt/cover.jpg'> |</p>
+|    | meta                                   | title                                                                                                                                                                                                                                    | publication   |   year | code                                                 | note                                   | cover                                                           |
+|---:|:---------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------|-------:|:-----------------------------------------------------|:---------------------------------------|:----------------------------------------------------------------|
+|  0 | [OpenVINO](./meta/OpenVINO.prototxt)   | [Post-training deep neural network pruning via layer-wise calibration](https://openaccess.thecvf.com/content/ICCV2021W/LPCV/papers/Lazarevich_Post-Training_Deep_Neural_Network_Pruning_via_Layer-Wise_Calibration_ICCVW_2021_paper.pdf) | ICCV workshop |   2021 |                                                      |                                        |                                                                 |
+|  1 | [MVUE](./meta/2U5DXO7C.prototxt)       | [Minimum Variance Unbiased N:M Sparsity for the Neural Gradients](https://openreview.net/pdf?id=vuD2xEtxZcj)                                                                                                                             | ICLR          |   2023 |                                                      |                                        |                                                                 |
+|  2 | [SMC](./meta/EHWNTP1V.prototxt)        | [Sparsity May Cry: Let Us Fail (Current) Sparse Neural Networks Together!](https://openreview.net/pdf?id=J6F3lLg4Kdp)                                                                                                                    | ICLR          |   2023 | [SMC-Bench](https://github.com/VITA-Group/SMC-Bench) |                                        |                                                                 |
+|  3 | [SparseGPT](./meta/sparsegpt.prototxt) | [SparseGPT: Massive Language Models Can be Accurately Pruned in one-shot.](https://arxiv.org/pdf/2301.00774.pdf)                                                                                                                         | arXiv         |   2023 | [Pytorch](https://github.com/IST-DASLab/sparsegpt)   | [note](./notes/sparsegpt/SparseGPT.md) | <img width='400' alt='image' src='./notes/sparsegpt/cover.jpg'> |</p>
 </details>
-<details><summary><b>sparse</b></summary>
-<p>
-
-|    | meta                             | title                                                                                                                 | publication   |   year | code                                                 | note   | cover   |
-|---:|:---------------------------------|:----------------------------------------------------------------------------------------------------------------------|:--------------|-------:|:-----------------------------------------------------|:-------|:--------|
-|  0 | [MVUE](./meta/2U5DXO7C.prototxt) | [Minimum Variance Unbiased N:M Sparsity for the Neural Gradients](https://openreview.net/pdf?id=vuD2xEtxZcj)          | ICLR          |   2023 |                                                      |        |         |
-|  1 | [SMC](./meta/EHWNTP1V.prototxt)  | [Sparsity May Cry: Let Us Fail (Current) Sparse Neural Networks Together!](https://openreview.net/pdf?id=J6F3lLg4Kdp) | ICLR          |   2023 | [SMC-Bench](https://github.com/VITA-Group/SMC-Bench) |        |         |</p>
-</details>
-<details><summary><b>quantization</b></summary>
+<details><summary><b>Quantization</b></summary>
 <p>
 
 |    | meta                         | title                                                                                                            | publication   |   year | code                                            | note   | cover   |
@@ -129,7 +123,7 @@ keyword {
 |  0 | [MVUE](./meta/2U5DXO7C.prototxt) | [Minimum Variance Unbiased N:M Sparsity for the Neural Gradients](https://openreview.net/pdf?id=vuD2xEtxZcj)          | ICLR          |   2023 |                                                      |        |         |
 |  1 | [SMC](./meta/EHWNTP1V.prototxt)  | [Sparsity May Cry: Let Us Fail (Current) Sparse Neural Networks Together!](https://openreview.net/pdf?id=J6F3lLg4Kdp) | ICLR          |   2023 | [SMC-Bench](https://github.com/VITA-Group/SMC-Bench) |        |         |</p>
 </details>
-<details><summary><b>ICCV-workshop</b></summary>
+<details><summary><b>ICCV workshop</b></summary>
 <p>
 
 |    | meta                                 | title                                                                                                                                                                                                                                    | publication   |   year | code   | note   | cover   |
@@ -145,56 +139,56 @@ keyword {
 </summary>
 <p>
 
-<details><summary><b>University-of-Texas-at-Austin</b></summary>
+<details><summary><b>University of Texas at Austin</b></summary>
 <p>
 
 |    | meta                            | title                                                                                                                 | publication   |   year | code                                                 | note   | cover   |
 |---:|:--------------------------------|:----------------------------------------------------------------------------------------------------------------------|:--------------|-------:|:-----------------------------------------------------|:-------|:--------|
 |  0 | [SMC](./meta/EHWNTP1V.prototxt) | [Sparsity May Cry: Let Us Fail (Current) Sparse Neural Networks Together!](https://openreview.net/pdf?id=J6F3lLg4Kdp) | ICLR          |   2023 | [SMC-Bench](https://github.com/VITA-Group/SMC-Bench) |        |         |</p>
 </details>
-<details><summary><b>Tencent-AI-Lab</b></summary>
+<details><summary><b>Tencent AI Lab</b></summary>
 <p>
 
 |    | meta                         | title                                                                                                            | publication   |   year | code                                            | note   | cover   |
 |---:|:-----------------------------|:-----------------------------------------------------------------------------------------------------------------|:--------------|-------:|:------------------------------------------------|:-------|:--------|
 |  0 | [RPTQ](./meta/RPTQ.prototxt) | [RPTQ: Reorder-based Post-training Quantization for Large Language Models](https://arxiv.org/pdf/2304.01089.pdf) | arXiv         |   2023 | [PyTorch](https://github.com/hahnyuan/RPTQ4LLM) |        |         |</p>
 </details>
-<details><summary><b>Neural-Magic</b></summary>
+<details><summary><b>Neural Magic</b></summary>
 <p>
 
 |    | meta                                   | title                                                                                                            | publication   |   year | code                                               | note                                   | cover                                                           |
 |---:|:---------------------------------------|:-----------------------------------------------------------------------------------------------------------------|:--------------|-------:|:---------------------------------------------------|:---------------------------------------|:----------------------------------------------------------------|
 |  0 | [SparseGPT](./meta/sparsegpt.prototxt) | [SparseGPT: Massive Language Models Can be Accurately Pruned in one-shot.](https://arxiv.org/pdf/2301.00774.pdf) | arXiv         |   2023 | [Pytorch](https://github.com/IST-DASLab/sparsegpt) | [note](./notes/sparsegpt/SparseGPT.md) | <img width='400' alt='image' src='./notes/sparsegpt/cover.jpg'> |</p>
 </details>
-<details><summary><b>Intel-Corporation</b></summary>
+<details><summary><b>Intel Corporation</b></summary>
 <p>
 
 |    | meta                                 | title                                                                                                                                                                                                                                    | publication   |   year | code   | note   | cover   |
 |---:|:-------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------|-------:|:-------|:-------|:--------|
 |  0 | [OpenVINO](./meta/OpenVINO.prototxt) | [Post-training deep neural network pruning via layer-wise calibration](https://openaccess.thecvf.com/content/ICCV2021W/LPCV/papers/Lazarevich_Post-Training_Deep_Neural_Network_Pruning_via_Layer-Wise_Calibration_ICCVW_2021_paper.pdf) | ICCV workshop |   2021 |        |        |         |</p>
 </details>
-<details><summary><b>IST-Austria</b></summary>
+<details><summary><b>IST Austria</b></summary>
 <p>
 
 |    | meta                                   | title                                                                                                            | publication   |   year | code                                               | note                                   | cover                                                           |
 |---:|:---------------------------------------|:-----------------------------------------------------------------------------------------------------------------|:--------------|-------:|:---------------------------------------------------|:---------------------------------------|:----------------------------------------------------------------|
 |  0 | [SparseGPT](./meta/sparsegpt.prototxt) | [SparseGPT: Massive Language Models Can be Accurately Pruned in one-shot.](https://arxiv.org/pdf/2301.00774.pdf) | arXiv         |   2023 | [Pytorch](https://github.com/IST-DASLab/sparsegpt) | [note](./notes/sparsegpt/SparseGPT.md) | <img width='400' alt='image' src='./notes/sparsegpt/cover.jpg'> |</p>
 </details>
-<details><summary><b>Houmo-AI</b></summary>
+<details><summary><b>Houmo AI</b></summary>
 <p>
 
 |    | meta                         | title                                                                                                            | publication   |   year | code                                            | note   | cover   |
 |---:|:-----------------------------|:-----------------------------------------------------------------------------------------------------------------|:--------------|-------:|:------------------------------------------------|:-------|:--------|
 |  0 | [RPTQ](./meta/RPTQ.prototxt) | [RPTQ: Reorder-based Post-training Quantization for Large Language Models](https://arxiv.org/pdf/2304.01089.pdf) | arXiv         |   2023 | [PyTorch](https://github.com/hahnyuan/RPTQ4LLM) |        |         |</p>
 </details>
-<details><summary><b>Habana-Labs</b></summary>
+<details><summary><b>Habana Labs</b></summary>
 <p>
 
 |    | meta                             | title                                                                                                        | publication   |   year | code   | note   | cover   |
 |---:|:---------------------------------|:-------------------------------------------------------------------------------------------------------------|:--------------|-------:|:-------|:-------|:--------|
 |  0 | [MVUE](./meta/2U5DXO7C.prototxt) | [Minimum Variance Unbiased N:M Sparsity for the Neural Gradients](https://openreview.net/pdf?id=vuD2xEtxZcj) | ICLR          |   2023 |        |        |         |</p>
 </details>
-<details><summary><b>Eindhoven-University-of-Technology</b></summary>
+<details><summary><b>Eindhoven University of Technology</b></summary>
 <p>
 
 |    | meta                            | title                                                                                                                 | publication   |   year | code                                                 | note   | cover   |
@@ -210,70 +204,70 @@ keyword {
 </summary>
 <p>
 
-<details><summary><b>Zhihang-Yuan</b></summary>
+<details><summary><b>Zhihang Yuan</b></summary>
 <p>
 
 |    | meta                         | title                                                                                                            | publication   |   year | code                                            | note   | cover   |
 |---:|:-----------------------------|:-----------------------------------------------------------------------------------------------------------------|:--------------|-------:|:------------------------------------------------|:-------|:--------|
 |  0 | [RPTQ](./meta/RPTQ.prototxt) | [RPTQ: Reorder-based Post-training Quantization for Large Language Models](https://arxiv.org/pdf/2304.01089.pdf) | arXiv         |   2023 | [PyTorch](https://github.com/hahnyuan/RPTQ4LLM) |        |         |</p>
 </details>
-<details><summary><b>Zhangyang-Wang</b></summary>
+<details><summary><b>Zhangyang Wang</b></summary>
 <p>
 
 |    | meta                            | title                                                                                                                 | publication   |   year | code                                                 | note   | cover   |
 |---:|:--------------------------------|:----------------------------------------------------------------------------------------------------------------------|:--------------|-------:|:-----------------------------------------------------|:-------|:--------|
 |  0 | [SMC](./meta/EHWNTP1V.prototxt) | [Sparsity May Cry: Let Us Fail (Current) Sparse Neural Networks Together!](https://openreview.net/pdf?id=J6F3lLg4Kdp) | ICLR          |   2023 | [SMC-Bench](https://github.com/VITA-Group/SMC-Bench) |        |         |</p>
 </details>
-<details><summary><b>Shiwei-Liu</b></summary>
+<details><summary><b>Shiwei Liu</b></summary>
 <p>
 
 |    | meta                            | title                                                                                                                 | publication   |   year | code                                                 | note   | cover   |
 |---:|:--------------------------------|:----------------------------------------------------------------------------------------------------------------------|:--------------|-------:|:-----------------------------------------------------|:-------|:--------|
 |  0 | [SMC](./meta/EHWNTP1V.prototxt) | [Sparsity May Cry: Let Us Fail (Current) Sparse Neural Networks Together!](https://openreview.net/pdf?id=J6F3lLg4Kdp) | ICLR          |   2023 | [SMC-Bench](https://github.com/VITA-Group/SMC-Bench) |        |         |</p>
 </details>
-<details><summary><b>Nikita-Malinin</b></summary>
+<details><summary><b>Nikita Malinin</b></summary>
 <p>
 
 |    | meta                                 | title                                                                                                                                                                                                                                    | publication   |   year | code   | note   | cover   |
 |---:|:-------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------|-------:|:-------|:-------|:--------|
 |  0 | [OpenVINO](./meta/OpenVINO.prototxt) | [Post-training deep neural network pruning via layer-wise calibration](https://openaccess.thecvf.com/content/ICCV2021W/LPCV/papers/Lazarevich_Post-Training_Deep_Neural_Network_Pruning_via_Layer-Wise_Calibration_ICCVW_2021_paper.pdf) | ICCV workshop |   2021 |        |        |         |</p>
 </details>
-<details><summary><b>Ivan-Lazarevich</b></summary>
+<details><summary><b>Ivan Lazarevich</b></summary>
 <p>
 
 |    | meta                                 | title                                                                                                                                                                                                                                    | publication   |   year | code   | note   | cover   |
 |---:|:-------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------|-------:|:-------|:-------|:--------|
 |  0 | [OpenVINO](./meta/OpenVINO.prototxt) | [Post-training deep neural network pruning via layer-wise calibration](https://openaccess.thecvf.com/content/ICCV2021W/LPCV/papers/Lazarevich_Post-Training_Deep_Neural_Network_Pruning_via_Layer-Wise_Calibration_ICCVW_2021_paper.pdf) | ICCV workshop |   2021 |        |        |         |</p>
 </details>
-<details><summary><b>Elias-Frantar</b></summary>
+<details><summary><b>Elias Frantar</b></summary>
 <p>
 
 |    | meta                                   | title                                                                                                            | publication   |   year | code                                               | note                                   | cover                                                           |
 |---:|:---------------------------------------|:-----------------------------------------------------------------------------------------------------------------|:--------------|-------:|:---------------------------------------------------|:---------------------------------------|:----------------------------------------------------------------|
 |  0 | [SparseGPT](./meta/sparsegpt.prototxt) | [SparseGPT: Massive Language Models Can be Accurately Pruned in one-shot.](https://arxiv.org/pdf/2301.00774.pdf) | arXiv         |   2023 | [Pytorch](https://github.com/IST-DASLab/sparsegpt) | [note](./notes/sparsegpt/SparseGPT.md) | <img width='400' alt='image' src='./notes/sparsegpt/cover.jpg'> |</p>
 </details>
-<details><summary><b>Daniel-Soudry</b></summary>
+<details><summary><b>Daniel Soudry</b></summary>
 <p>
 
 |    | meta                             | title                                                                                                        | publication   |   year | code   | note   | cover   |
 |---:|:---------------------------------|:-------------------------------------------------------------------------------------------------------------|:--------------|-------:|:-------|:-------|:--------|
 |  0 | [MVUE](./meta/2U5DXO7C.prototxt) | [Minimum Variance Unbiased N:M Sparsity for the Neural Gradients](https://openreview.net/pdf?id=vuD2xEtxZcj) | ICLR          |   2023 |        |        |         |</p>
 </details>
-<details><summary><b>Dan-Alistarh</b></summary>
+<details><summary><b>Dan Alistarh</b></summary>
 <p>
 
 |    | meta                                   | title                                                                                                            | publication   |   year | code                                               | note                                   | cover                                                           |
 |---:|:---------------------------------------|:-----------------------------------------------------------------------------------------------------------------|:--------------|-------:|:---------------------------------------------------|:---------------------------------------|:----------------------------------------------------------------|
 |  0 | [SparseGPT](./meta/sparsegpt.prototxt) | [SparseGPT: Massive Language Models Can be Accurately Pruned in one-shot.](https://arxiv.org/pdf/2301.00774.pdf) | arXiv         |   2023 | [Pytorch](https://github.com/IST-DASLab/sparsegpt) | [note](./notes/sparsegpt/SparseGPT.md) | <img width='400' alt='image' src='./notes/sparsegpt/cover.jpg'> |</p>
 </details>
-<details><summary><b>Brian-Chmiel</b></summary>
+<details><summary><b>Brian Chmiel</b></summary>
 <p>
 
 |    | meta                             | title                                                                                                        | publication   |   year | code   | note   | cover   |
 |---:|:---------------------------------|:-------------------------------------------------------------------------------------------------------------|:--------------|-------:|:-------|:-------|:--------|
 |  0 | [MVUE](./meta/2U5DXO7C.prototxt) | [Minimum Variance Unbiased N:M Sparsity for the Neural Gradients](https://openreview.net/pdf?id=vuD2xEtxZcj) | ICLR          |   2023 |        |        |         |</p>
 </details>
-<details><summary><b>Bingzhe-Wu</b></summary>
+<details><summary><b>Bingzhe Wu</b></summary>
 <p>
 
 |    | meta                         | title                                                                                                            | publication   |   year | code                                            | note   | cover   |
