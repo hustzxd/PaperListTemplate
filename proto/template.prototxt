@@ -19,8 +19,7 @@ note {
   url: ""
 }
 keyword {
-  words: "key1"
-  words: "key2"
+  words: none
 }
 cover {
   url: ""

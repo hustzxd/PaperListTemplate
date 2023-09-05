@@ -29,12 +29,14 @@ def gene_base_template():
 
     pinfo.cover.url = pinfo.cover.url
 
-    pinfo.keyword.words.extend(["key1", "key2"])
+    pinfo.keyword.words.extend([pinfo.keyword.Word.none])
 
     root_dir = os.getenv("CURRENT_DIR")
     with open(os.path.join(root_dir, "proto", "template.prototxt"), "w") as wf:
         print(pinfo)
-        print("Writing paper information into {}/proto/template.prototxt".format(root_dir))
+        print(
+            "Writing paper information into {}/proto/template.prototxt".format(root_dir)
+        )
         wf.write(str(pinfo))
 
 

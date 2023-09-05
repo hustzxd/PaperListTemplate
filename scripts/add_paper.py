@@ -40,7 +40,9 @@ def main():
         return
     with open(os.path.join(root_dir, "meta", "{}.prototxt".format(name)), "w") as wf:
         print(pinfo)
-        print("Writing paper information into {}/meta/{}.prototxt".format(root_dir, name))
+        print(
+            "Writing paper information into {}/meta/{}.prototxt".format(root_dir, name)
+        )
         wf.write(str(pinfo))
 
 
