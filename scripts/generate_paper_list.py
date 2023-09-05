@@ -148,7 +148,7 @@ def main():
     # inst_cls = {}
     # author_cls = {}
 
-    markdown += gen_table(keyword_cls, columns, "keyword")
+    markdown += gen_table(keyword_cls, columns, "keyword", is_open=True)
     markdown += gen_table(year_cls, columns, "year")
     markdown += gen_table(pub_cls, columns, "publication")
     markdown += gen_table(inst_cls, columns, "instution")
@@ -180,8 +180,14 @@ def gen_table(out_cls, columns, cls_name, is_open=False):
         df_ = df_.sort_values(
             by=["year", "publication", "title"], ascending=True
         ).reset_index(drop=True)
-        # markdown += "\n### {}\n\n".format(year)
-        markdown += """<details><summary><b>{}</b></summary> \n<p>\n\n""".format(key)
+        if is_open:
+            markdown += (
+                """<details open><summary><b>{}</b></summary> \n<p>\n\n""".format(key)
+            )
+        else:
+            markdown += """<details><summary><b>{}</b></summary> \n<p>\n\n""".format(
+                key
+            )
         markdown += df_.to_markdown()
         markdown += "</p>\n</details>\n"
     markdown += "</p>\n</details>\n\n"

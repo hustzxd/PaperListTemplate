@@ -49,13 +49,13 @@ keyword {
 
 ## Paper List
 
-<details><summary>
+<details open><summary>
 
 ### keyword
 </summary>
 <p>
 
-<details><summary><b>Sparse/Pruning</b></summary>
+<details open><summary><b>Sparse/Pruning</b></summary>
 <p>
 
 |    | meta                                   | title                                                                                                                                                                                                                                    | publication   |   year | code                                                 | note                                   | cover                                                           |
@@ -65,7 +65,7 @@ keyword {
 |  2 | [SMC](./meta/EHWNTP1V.prototxt)        | [Sparsity May Cry: Let Us Fail (Current) Sparse Neural Networks Together!](https://openreview.net/pdf?id=J6F3lLg4Kdp)                                                                                                                    | ICLR          |   2023 | [SMC-Bench](https://github.com/VITA-Group/SMC-Bench) |                                        |                                                                 |
 |  3 | [SparseGPT](./meta/sparsegpt.prototxt) | [SparseGPT: Massive Language Models Can be Accurately Pruned in one-shot.](https://arxiv.org/pdf/2301.00774.pdf)                                                                                                                         | arXiv         |   2023 | [Pytorch](https://github.com/IST-DASLab/sparsegpt)   | [note](./notes/sparsegpt/SparseGPT.md) | <img width='400' alt='image' src='./notes/sparsegpt/cover.jpg'> |</p>
 </details>
-<details><summary><b>Quantization</b></summary>
+<details open><summary><b>Quantization</b></summary>
 <p>
 
 |    | meta                         | title                                                                                                            | publication   |   year | code                                            | note   | cover   |
