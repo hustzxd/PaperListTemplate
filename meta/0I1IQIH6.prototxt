@@ -1,0 +1,20 @@
+paper {
+  title: "Revisiting Pruning at Initialization Through the Lens of Ramanujan Graph"
+  abbr: ""
+  url: "https://openreview.net/forum?id=uVcDssQff"
+  authors: "Name1"
+  authors: "Name2"
+  institutions: "inst1"
+  institutions: "inst2"
+}
+pub {
+  where: "ICLR"
+  year: 2023
+}
+code {
+  type: "Pytorch"
+  url: ""
+}
+note {
+  url: ""
+}

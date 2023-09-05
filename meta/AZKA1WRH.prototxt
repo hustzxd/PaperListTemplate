@@ -1,0 +1,20 @@
+paper {
+  title: "How I Learned to Stop Worrying and Love Retraining"
+  abbr: "abbr"
+  url: "https://openreview.net/forum?id=_nF5imFKQI"
+  authors: "Name1"
+  authors: "Name2"
+  institutions: "inst1"
+  institutions: "inst2"
+}
+pub {
+  where: "ICLR"
+  year: 2023
+}
+code {
+  type: "Pytorch"
+  url: ""
+}
+note {
+  url: ""
+}

@@ -1,0 +1,20 @@
+paper {
+  title: "Over-parameterized Model Optimization with Polyak-Lojasiewicz Condition"
+  abbr: "abbr"
+  url: "https://openreview.net/forum?id=aBIpZvMdS56"
+  authors: "Name1"
+  authors: "Name2"
+  institutions: "inst1"
+  institutions: "inst2"
+}
+pub {
+  where: "ICLR"
+  year: 2023
+}
+code {
+  type: "Pytorch"
+  url: ""
+}
+note {
+  url: ""
+}

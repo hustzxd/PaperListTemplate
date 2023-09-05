@@ -1,0 +1,20 @@
+paper {
+  title: "NTK-SAP: Improving neural network pruning by aligning training dynamics"
+  abbr: "NTK-SAP"
+  url: "https://openreview.net/forum?id=-5EWhW_4qWP"
+  authors: "Name1"
+  authors: "Name2"
+  institutions: "inst1"
+  institutions: "inst2"
+}
+pub {
+  where: "ICLR"
+  year: 2023
+}
+code {
+  type: "Pytorch"
+  url: ""
+}
+note {
+  url: ""
+}

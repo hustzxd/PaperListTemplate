@@ -1,0 +1,21 @@
+paper {
+  title: "A Unified Framework for Soft Threshold Pruning"
+  abbr: "abbr"
+  url: "https://openreview.net/forum?id=cCFqcrq0d8"
+  authors: "Name1"
+  authors: "Name2"
+  institutions: "inst1"
+  institutions: "inst2"
+}
+pub {
+  where: "ICLR"
+  year: 2023
+}
+code {
+  type: "Pytorch"
+  url: ""
+}
+note {
+  url: ""
+}
+
