@@ -19,6 +19,5 @@ note {
   url: ""
 }
 keyword {
-  words: "key1"
-  words: "key2"
+  words: sparse_pruning
 }
